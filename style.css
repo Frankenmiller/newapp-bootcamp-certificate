@@ -1,7 +1,7 @@
 html {
     height: 100%;
     overflow: hidden;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
 }
 
 #title {
@@ -68,6 +68,7 @@ img {
     opacity: .65;
     max-height: 400px;
     max-width: 525px;
+    box-shadow: 0px 0px 15px white;
 }
 
 #stars_one {
@@ -257,7 +258,7 @@ img {
 #stars_one:after {
     content: '';
     position: absolute;
-    top: 2000px;
+    top: -2000px;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -501,7 +502,7 @@ img {
 #stars_two:after {
     content: '';
     position: absolute;
-    top: 2000px;
+    top: -2000px;
     width: 2px;
     height: 2px;
     background: transparent;
@@ -594,7 +595,7 @@ img {
 #stars_three:after {
     content: '';
     position: absolute;
-    top: 2000px;    
+    top: -2000px;    
     width: 3px;
     height: 3px;
     background: transparent;
@@ -632,6 +633,6 @@ img {
         transform: translateY(0px);
     }
     to {
-        transform: translateY(-2000px);
+        transform: translateY(2000px);
     }
 }
