@@ -29,9 +29,9 @@ html {
     background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 20px 30px 10px;
+    padding: 20px 30px 5px;
     font-family: Lato;
-    font-size: 20px;
+    font-size: 18px;
 }           
 
 .img-info p {
@@ -66,7 +66,7 @@ html {
         padding-bottom: 0px;
     }
     .img-info h2 {
-        padding: 0px 30px 20px;
+        padding: 15px 30px 20px;
         text-align: center;
         font-size: 45px;
     }           
@@ -94,7 +94,7 @@ html {
         padding: 0px 150px 20px;        
     }           
 }
-
+/* 
     position: absolute;
     top: 10%;
     left: 0;
@@ -142,7 +142,7 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 15px;
-}
+} */
 
 
 
