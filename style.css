@@ -33,6 +33,16 @@ html {
 
 .rocket {
     height: 300px;
+    animation: move 0.2s linear infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(-5px);
+    }
+    to {
+        transform: translateX(5px);
+    }
 }
 
 .rocket_container {
@@ -40,6 +50,20 @@ html {
     top: -200px;
     left: 50%;
     transform: translate(-50%, 350px);
+}
+
+.preloader h3 {
+    color: #FFF;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 550px;
+    white-space: nowrap;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
 }
 
 .wrapper {
