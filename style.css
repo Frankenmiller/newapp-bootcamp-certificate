@@ -45,6 +45,23 @@ html {
     }
 }
 
+#circle {
+    animation: falling-circles 0.2s linear infinite alternate;
+}
+
+@keyframes falling-circles {
+
+}
+
+@keyframes star-fall {
+    from {
+        transform: translateY(-1000px);
+    }
+    to {
+        transform: translateY(1000px);
+    }
+}
+
 .rocket_container {
     position: absolute;
     top: -200px;
