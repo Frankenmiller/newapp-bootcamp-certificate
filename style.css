@@ -21,7 +21,12 @@ html {
     background-color: #353535;
     overflow: hidden;
     z-index: 1000;
-    --display: none;
+    transition: opacity 0.5s 5.5s;
+}
+
+.preloader.preload-finish {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .outer-space {
@@ -38,7 +43,7 @@ html {
 }
 
 .preloader.preload-finish .rocket_container {
-    animation: finish 1.5s 1 ease forwards 5.0s;
+    animation: finish .5s 1 ease forwards 5.0s;
 }
 
 @keyframes finish {
