@@ -3,13 +3,20 @@
 html {
     height: 100%;
     overflow: hidden;
-    background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+    --background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .preloader {
@@ -755,4 +762,16 @@ html {
     to {
         transform: translateY(2000px);
     }
+}
+
+.label {
+    width: 50px;
+    height: 26px;
+    background-color: #111;
+    display: flex;
+    border-radius: 50px;
+}
+
+.fa-moon {
+    color: #F1C40F;
 }
