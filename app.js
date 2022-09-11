@@ -13,8 +13,10 @@ window.addEventListener("load", () => {
 
 if (checkbox) {
     checkbox.addEventListener("change", () => {
+        //var img_info = document.createElement(".img-info")
         console.log("Button toggled!")
         document.body.classList.toggle('light');
+        //document.img_info.classList.toggle('light');
     });
 }
 

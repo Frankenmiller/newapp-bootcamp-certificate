@@ -15,13 +15,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #090a0f;
-    --background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
 }
 
 body.light {
-    background-color: #FFF;
-    background: radial-gradient(ellipse at top, #1b2735 0%, #FFF 100%);
+    background: radial-gradient(ellipse at bottom, darkblue 0%, #FFF 100%);
 }
 
 .preloader {
@@ -112,9 +110,10 @@ body.light {
 
 .img-banner {
     width: 100%;
-    max-height: 25px;
-    display: none;
+    max-height: 45px;
+    display: banner;
     opacity: .4;
+    z-index: 0;
 }
 
 .img-info {
@@ -128,8 +127,8 @@ body.light {
     -webkit-text-fill-color: transparent;
     padding: 20px 30px 5px;
     font-family: Lato;
-    font-size: 18px;
-}           
+    font-size: 20px;
+}                   
 
 .img-info p {
     color: #fff;
@@ -144,23 +143,22 @@ body.light {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    --padding: 10px 10px;
     width: 85%;
-    opacity: .65;
-    --max-height: 400px;
-    --max-width: 525px;
-    box-shadow: 0px 0px 15px white;
+    opacity: 1.0;
+    box-shadow: 0px 0px 5px white;
 }
 
 .img-cert:hover {
-    opacity: 1.0;
+    opacity: 1.1;
     scale: 103%;
+    box-shadow: 0px 0px 25px white;
 }
 
 @media only screen and (min-width: 768px) {
     .img-banner {
         display: block;
         width: 100%;
+        max-height: 45px;
         padding-bottom: 0px;
     }
     .img-info h2 {
@@ -173,9 +171,14 @@ body.light {
         line-height: 25px;
         padding: 0px 75px 20px;        
     }           
-    
     .img-cert {
-        max-width: 350px;
+        max-width: 685px;
+    }
+    .label {
+        left: 25%;
+        transform: translateX(-25%);
+        width: 50px;
+        height: 26px;
     }
 }
 
@@ -186,9 +189,9 @@ body.light {
         padding-bottom: 0px;
     }
     .img-info h2 {
-        padding: 0px 30px 20px;
+        padding: 20px 30px 20px;
         text-align: center;
-        font-size: 75px;
+        font-size: 65px;
     }           
     .img-info p {
         font-size: 25px;
@@ -771,8 +774,9 @@ body.light {
 
 .label {
     position: absolute;
-    left: 120px;
-    top: 40px;
+    left: 25%;
+    top: 10px;
+    transform: translateX(-25%);
     width: 50px;
     height: 26px;
     align-items: center;
@@ -781,6 +785,7 @@ body.light {
     background-color: darkblue;
     display: flex;
     border-radius: 50px;
+    z-index: 1;
 }
 
 .fa-moon {
