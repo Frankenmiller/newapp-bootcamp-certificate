@@ -28,7 +28,7 @@ body {
     background-color: #353535;
     overflow: hidden;
     z-index: 1000;
-    transition: opacity 0.5s 5.5s;
+    transition: opacity 0.5s 0.5s; -- be sure set it back to 5.5s please
 }
 
 .preloader.preload-finish {
@@ -50,7 +50,7 @@ body {
 }
 
 .preloader.preload-finish .rocket_container {
-    animation: finish .5s 1 ease forwards 5.0s;
+    animation: finish .5s 1 ease forwards 0.5s; -- be sure reset it to 5.0s
 }
 
 @keyframes finish {
