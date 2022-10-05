@@ -31,7 +31,7 @@ body.light {
     background-color: #353535;
     overflow: hidden;
     z-index: 1000;
-    transition: opacity 0.5s 0.5s; -- be sure set it back to 5.5s please
+    transition: opacity .5s 5.5s; -- be sure set it back to 5.5s please
 }
 
 .preloader.preload-finish {
@@ -53,7 +53,15 @@ body.light {
 }
 
 .preloader.preload-finish .rocket_container {
-    animation: finish .5s 1 ease forwards 0.5s; -- be sure reset it to 5.0s
+    animation: finish .5s 1 ease forwards 5s; -- be sure reset it to 5.0s
+}
+
+#linkedin {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 15px;
+    z-index: 2;    
 }
 
 @keyframes finish {
@@ -175,10 +183,16 @@ body.light {
         max-width: 685px;
     }
     .label {
-        left: 25%;
+        right: 5%;
         transform: translateX(-25%);
         width: 50px;
         height: 26px;
+    }
+    #linkedin {
+        top: 10px;
+        left: 20px;
+        font-size: 25px;
+        z-index: 2;    
     }
 }
 
@@ -201,6 +215,12 @@ body.light {
     
     .img-cert {
         max-width: 450px;
+    }
+    #linkedin {
+        top: 10px;
+        left: 50px;
+        font-size: 25px;
+        z-index: 2;    
     }
 }
 
@@ -774,7 +794,7 @@ body.light {
 
 .label {
     position: absolute;
-    left: 25%;
+    right: 3%;
     top: 10px;
     transform: translateX(-25%);
     width: 50px;
