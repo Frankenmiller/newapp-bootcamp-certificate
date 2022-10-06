@@ -31,7 +31,7 @@ body.light {
     background-color: #353535;
     overflow: hidden;
     z-index: 1000;
-    transition: opacity .5s 5.5s; -- be sure set it back to 5.5s please
+    transition: opacity .5s 5.5s; /* be sure set it back to 5.5s please */
 }
 
 .preloader.preload-finish {
@@ -53,14 +53,30 @@ body.light {
 }
 
 .preloader.preload-finish .rocket_container {
-    animation: finish .5s 1 ease forwards 5s; -- be sure reset it to 5.0s
+    animation: finish .5s 1 ease forwards 5s; /* be sure reset it to 5.0s */
+}
+
+#space-traveler {
+    font-size: 22px;
+    align-items: center;
+    color: #FFF;
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: 400;
+    left: 50%;
+    width: 80%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    top: 60%;
 }
 
 #linkedin {
     position: absolute;
     top: 13px;
-    left: 20px;
-    font-size: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 400;
     z-index: 2;    
 }
 
@@ -190,10 +206,18 @@ body.light {
     }
     #linkedin {
         top: 10px;
-        left: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 600;
         font-size: 25px;
         z-index: 2;    
     }
+    #space-traveler {
+        font-size: 45px;
+        left: 60%;
+        transform: translateX(-50%);
+        top: 40%;
+    }    
 }
 
 @media only screen and (min-width: 1000px) {
@@ -218,9 +242,21 @@ body.light {
     }
     #linkedin {
         top: 10px;
-        left: 50px;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 25px;
         z-index: 2;    
+    }
+    #space-traveler {
+        font-size: 50px;
+        color: #FFF;
+        position: absolute;
+        font-family: sans-serif;
+        font-weight: 400;
+        left: 60%;
+        white-space: nowrap;
+        transform: translateX(-50%);
+        top: 60%;
     }
 }
 
@@ -794,7 +830,7 @@ body.light {
 
 .label {
     position: absolute;
-    right: 3%;
+    left: 18px;
     top: 10px;
     transform: translateX(-25%);
     width: 50px;
