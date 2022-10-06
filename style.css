@@ -31,7 +31,7 @@ body.light {
     background-color: #353535;
     overflow: hidden;
     z-index: 1000;
-    transition: opacity .5s 5.5s; -- be sure set it back to 5.5s please
+    transition: opacity .5s 5.5s; /* be sure set it back to 5.5s please */
 }
 
 .preloader.preload-finish {
@@ -214,7 +214,7 @@ body.light {
     }
     #space-traveler {
         font-size: 45px;
-        left: 50%;
+        left: 60%;
         transform: translateX(-50%);
         top: 40%;
     }    
